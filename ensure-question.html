@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ensure question</title>
+</head>
+<body>
+<script>
+
+    function ensureQuestion(s) {
+        // Code here
+        if(s[s.length-1] != '?'){
+        //index of s look at the last index if s is not equal to "?"
+            return s+'?';
+        //return s concatenate with "?"
+        }
+        return s;
+        //return s
+
+    }
+
+    //Test
+
+            console.log(ensureQuestion(""));//,"?","Expected: '?'"
+            console.log(ensureQuestion("Yes"));//,"Yes?","Expected: '?'"
+            console.log(ensureQuestion("No?"));//,"No?","Expected: '?'"
+</script>
+</body>
+</html>
