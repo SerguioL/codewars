@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How old will I be in 2099?</title>
+</head>
+<body>
+
+<script>
+
+    function  calculateAge(birth,now) {
+        let age = now - birth;
+        let youWillBeBorn = birth - now;
+        if(now === birth){
+            return`You were born this very year!`;
+        }else if (youWillBeBorn === 1){
+            return`You will be born in 1 year.`;
+        }else if (age === 1){
+            return`You are ${age} year old.`;
+        }else if (birth > now){
+            return`You will be born in ${youWillBeBorn} years.`;
+        }else{
+            return`You are ${age} years old.`;
+        }
+    }
+
+    //Test
+    // describe("Random test cases", function() {
+    //     Test.assertEquals(calculateAge(2012, 2016),"You are 4 years old.");
+    //     Test.assertEquals(calculateAge(1989, 2016),"You are 27 years old.");
+    //     Test.assertEquals(calculateAge(2000, 2090),"You are 90 years old.");
+    //     Test.assertEquals(calculateAge(2000, 1990),"You will be born in 10 years.");
+    //     Test.assertEquals(calculateAge(3400, 3400),"You were born this very year!");
+    //     Test.assertEquals(calculateAge(900, 2900),"You are 2000 years old.");
+    //     Test.assertEquals(calculateAge(2010, 1990),"You will be born in 20 years.");
+    //     Test.assertEquals(calculateAge(2010, 1500),"You will be born in 510 years.");
+    //     Test.assertEquals(calculateAge(2011, 2012),"You are 1 year old.");
+    //     Test.assertEquals(calculateAge(2000, 1999),"You will be born in 1 year.");
+    // })
+
+</script>
+
+</body>
+</html>
