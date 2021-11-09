@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return String of First Characters</title>
+</head>
+<body>
+<script>
+
+    //In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string.
+
+  function makeString(s){
+    let splitS = s.split(' ')
+      // console.log(splitS);
+    let output = [];
+    for(let i =0; i<splitS.length; i++){
+        output.push(splitS[i].charAt(0))
+      // console.log(output.push(splitS[i].charAt(0)));
+    }
+      // console.log(output.join(''));
+
+    return output.join('');
+  }
+
+    console.log(makeString("This Is A Test"));//TIAT
+    console.log(makeString("brown eyes are nice"));//bean
+    console.log(makeString("cars are very nice"));//cavn
+    console.log(makeString("kaks de gan has a big head"));//kdghabh
+</script>
+</body>
+</html>
