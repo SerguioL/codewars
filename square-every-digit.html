@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Square Every Digit</title>
+</head>
+<body>
+
+<script>
+
+    function squareDigits(num){
+        let numbers = num.toString().split("");
+        let output = "";
+        numbers.forEach(function (number){
+            let numberS = Math.pow(number, 2)
+            output += numberS
+        });
+
+        return parseInt(output);
+    }
+
+    console.log(squareDigits(3212));
+
+</script>
+
+</body>
+</html>
